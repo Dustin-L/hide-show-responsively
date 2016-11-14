@@ -1,0 +1,89 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+[src*="diplodocus.jpg"] {
+  width: 100%;
+}
+[src*="stegosaurus.jpg"] {
+  display: none;
+}
+[src*="hadrosaur.jpg"] {
+  width: 100%;
+}
+[src*="iguanodon.jpg"] {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  [src*="diplodocus.jpg"] {
+    display: inline;
+    width: 49%;
+  }
+  [src*="stegosaurus.jpg"] {
+    display: inline;
+    width: 49%;
+  }
+  [src*="hadrosaur.jpg"] {
+    display: inline;
+    width: 49%;
+  }
+  [src*="iguanodon.jpg"] {
+    display: inline;
+    width: 49%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  [src*="diplodocus.jpg"] {
+    display: none;
+    width: 32%;
+  }
+  [src*="stegosaurus.jpg"] {
+    display: inline-block;
+    width: 32%;
+  }
+  [src*="hadrosaur.jpg"] {
+    display: inline-block;
+    width: 32%;
+  }
+  [src*="iguanodon.jpg"] {
+    display: inline-block;
+    width: 32%;
+}
+
+@media only screen and (min-width: 60em) {
+
+  [src*="diplodocus.jpg"] {
+    display: inline-block;;
+    width: 24%;
+    margin-left: .5rem;
+  }
+  [src*="stegosaurus.jpg"] {
+    display: inline-block;
+    width: 24%;
+  }
+  [src*="hadrosaur.jpg"] {
+    display: inline-block;
+    width: 24%;
+  }
+  [src*="iguanodon.jpg"] {
+    display: inline-block;
+    width: 24%;
+}
