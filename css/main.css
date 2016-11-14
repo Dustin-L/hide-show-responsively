@@ -73,7 +73,7 @@ html {
   [src*="diplodocus.jpg"] {
     display: inline-block;;
     width: 24%;
-    margin-left: .5rem;
+    margin-left: .55rem;
   }
   [src*="stegosaurus.jpg"] {
     display: inline-block;
